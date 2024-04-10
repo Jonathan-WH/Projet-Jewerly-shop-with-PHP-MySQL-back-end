@@ -1,0 +1,1827 @@
+/*ROUTINE*/
+
+* {
+    box-sizing: border-box;
+   
+}
+
+
+
+body{
+    background-color: black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    height: 2px;
+    background: #FFE373;
+    background-image: linear-gradient(to right, rgb(238, 255, 0), rgb(148, 159, 3), rgb(220, 248, 5));
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/*STYLE NAVIGATION****************************/
+
+/*BARRE DU HAUT********************************/
+
+div#barreduhaut {
+  height: 40px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+div#barreduhaut img[alt^=logo] {
+width: 10px;
+height: 10px;
+}
+
+div#droite {
+display: flex;
+margin: 10px;
+}
+
+div#droite div {
+  margin: 2px;
+  
+}
+div#droite div a {
+  color: white;
+  text-decoration: none;
+}
+
+div#droite div#loupe {
+  padding-right: 40px;
+  
+}
+
+div#droite div#loupe input {
+  background-color: #00000063;
+  color: white;
+  padding: 0
+  ;
+}
+
+div#droite div#moncompte a i {
+  padding-right: 5px;
+  
+}
+div#droite div#moncompte a {
+  padding-right: 10px;
+}
+
+div#gauche {
+display: flex;
+margin: 10px;
+}
+
+div#gauche div {
+  margin: 2px;
+}
+
+div#gauche div a {
+  color: white;
+  text-decoration: none;
+}
+
+div#gauche div#telephone {
+  padding-right: 5px;
+  
+}
+
+div#gauche div#telephone a i {
+  padding-right: 5px;
+}
+
+div#gauche div#mail a i {
+  padding-right: 10px;
+}
+/* FIN BARRE DU HAUT******************************************/
+
+/*NAVIGATION****************************************/
+
+nav {
+  width: 100%;
+}
+
+
+header div.logo img {
+    width: 15%;
+    height: auto;
+    padding: 10px;
+}
+
+div.logo {
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0);
+   align-items: center;
+   justify-content: center;
+   
+    
+}
+
+div.logo div {
+    width: 50%;
+}
+
+div.logo h1 {
+    margin: 0;
+    font-family: 'Tangerine', cursive;
+    color: white;
+   font-size: 5vw;
+}
+
+header nav ul {
+    
+    text-decoration: none;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+
+nav ul li {
+  
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    
+font-family: 'JetBrains Mono', monospace;
+width: 100%;
+color: white;
+font-size: 1.3vw;
+  
+    
+}
+
+
+/*menu déroulant*****************************************/
+
+.header-content {
+    position: relative;
+}
+
+
+div#joaillerie, div#pierreprecieuse, div#horlogerie {
+    
+    display: flex ;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /*height: 30vw;*/
+    height: auto;
+    position: absolute;
+    z-index: 4;
+  
+    
+}
+
+div#joaillerie::after, div#pierreprecieuse::after, div#horlogerie::after {
+  content: "";
+  display: block;
+  height: 2px; 
+  width: 100%; 
+  background-image: linear-gradient(to right, rgba(238, 255, 0, 0.24), rgba(149, 159, 3, 0.435), rgba(220, 248, 5, 0.193));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+    
+div#pierreprecieuse div.texte ul{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items:flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+}
+
+div#joaillerie div.texte ul{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items:flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    
+}
+
+div#horlogerie div.texte ul {
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items:flex-end;
+    background-color: rgba(0, 0, 0, 0);
+
+    
+}
+
+
+
+/*NOUVEAUTE MENU DEROULANT*/
+
+div#nouveaute {
+    display: grid;
+    justify-content: space-between; 
+    grid-template-columns: 1fr 1fr 1fr;
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 4;
+    align-items: center;
+   justify-content: center;
+   position:absolute;
+}
+
+#n1 img {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+#n2 img {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+#n3 img {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+  }
+
+
+
+
+#nouveaute div {
+    position: relative   ; 
+}
+
+#nouveaute p {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2; 
+
+    background-color: rgba(0, 0, 0, 0.41);
+    width: 89%;
+    text-align: center;
+    padding: 10px;
+    font-family:'JetBrains Mono', monospace; ;
+    color: white;
+}
+
+#nouveaute div img {
+    border-radius: 3px;
+    width: 90%;
+}
+
+#nouveaute::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%; 
+  background-image: linear-gradient(to right, rgba(238, 255, 0, 0.18), rgba(149, 159, 3, 0.435), rgba(220, 248, 5, 0.196));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/*FIN NOUVEAUTE MENU DEROULANT*/
+    
+
+div#joaillerie div.texte ul li, div#pierreprecieuse div.texte ul li,div#horlogerie div.texte ul li  {
+    
+    padding: 10px;
+    grid-column-start: 2 ;
+    
+}
+
+div#joaillerie div.texte ul li a, div#horlogerie div.texte ul li a, div#pierreprecieuse div.texte ul li a{
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+   
+
+}
+    
+
+div#pierreprecieuse div, div#joaillerie div, div#horlogerie div {
+    width: 50%;
+}
+
+div#pierreprecieuse div.img, div#joaillerie div.img, div#horlogerie div.img{
+    text-align: center;
+}
+
+div#pierreprecieuse div img, div#joaillerie div img, div#horlogerie div img {
+    width: 80%;
+    margin: 20px;
+border: 1px #ffe373 solid;
+border-radius: 3px;
+}
+
+/* FIN MENU DEROULANT */
+
+
+
+
+ /* Hamburger Menu *******************************************************/
+
+
+ .container1 {
+    
+    width: 100%;
+    margin: auto;
+  }
+  
+  .navbar1 {
+    width: 100%;
+
+  }
+  
+  .nav-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar1 .menu-items1 {
+    display: flex;
+  }
+  
+  .navbar1 .nav-container1 li {
+    list-style: none;
+  }
+  
+  .navbar1 .nav-container1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  
+  .nav-container1 {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container1 .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container1 .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container1 .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .nav-container1 .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container1 .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container1 .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar1 .menu-items1 {
+    padding-top: 60px;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+   
+  
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar1 .menu-items1 li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .menu-items1 {
+    display: flex;
+    flex-direction: column;
+    /*PERMETTTRE LE SCROLL DU MENU HAMBURGER*/
+      overflow-y: auto;
+     
+
+  }
+
+
+  
+  
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .menu-items1 {
+    transform: translateX(0);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+  div.menu-items1 {
+    width:100%;
+    background-color: black
+ 
+  }
+
+  div[class="container nav-container1"] {
+  margin-left: 0;
+  margin-right: 0;
+  }
+
+  div#barreduhauthamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /***********INPUTRECHERCHE****************/
+  .inputrechercheh {
+    background-color: rgba(0, 0, 0, 0.317);
+    color: white;
+    border: 1px solid white;
+  }
+
+   
+  
+
+
+
+
+  
+
+/***********MENU SURVOL********************/
+
+
+nav ul li, nav div.texte ul li{
+    position: relative;
+}
+
+nav ul li.underline::after, nav div.texte ul li.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffe373;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li.underline:hover::after , nav div.texte ul li.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.sousmenu1, .sousmenu2, .sousmenu3 {
+    margin: 0;
+    padding: 0;
+}
+
+/*********DIV #joaillerie + horlogerie + pierrecieuse survol pour souligner les element de la nav*/
+.underlineU {
+  border-bottom: 2px #ffe373 solid;
+}
+
+
+
+/***********IMAGE MENU SURVOL SECTION NOUVEAUTE********************/
+
+
+
+.hover {
+    transition: opacity 0.5s ease;
+}
+.hover:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+/*FIN NAVIGATION****************************************/
+
+
+
+
+/*FIN STYLE NAVIGATION****************************/
+
+/********* PAGE LA MAISON ************/
+
+/***********VIDEO***********/
+
+.video-container {
+    position: relative;
+    padding-bottom: 37%; /* Pour un ratio de 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+video {
+    object-fit: cover; 
+}
+
+
+
+/*********fiN VIDEO*************/
+
+
+/*****PHOTO FAMILLE**********/
+
+
+
+/*********DIV NOTRE HISTOIRE*************/
+
+#notrehistoire {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+#notrehistoire h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bolder;
+    font-size: 1.5vw;
+    margin-top: 40px;
+    color: rgb(255, 255, 255);
+}
+
+#notrehistoire h1 {
+    font-family: 'Tangerine', cursive;
+    font-size: 6vw;
+   margin-bottom: 20px;
+   color: white;
+}
+
+#notrehistoire p {
+    width: 80%;
+    font-family: 'italic, JetBrains Mono', monospace;
+    color: white;
+}
+
+hr#hrhistoire {
+    width: 80%;
+    margin-bottom: 20px;
+    border: 0;
+    height: 2px;
+    background: #FFE373;
+    background-image: linear-gradient(to right, rgb(238, 255, 0), rgb(148, 159, 3), rgb(220, 248, 5));
+}
+
+#notrehistoire img {
+
+    width: 70%;
+    margin-top: 100px;
+    border: 1px #ffe373 solid;
+    
+}
+
+
+
+
+
+
+/*********FIN DIV NOTRE HISTOIRE*************/
+
+
+/*********DIV QUATRE MIX*************/
+div#quatremix {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+div#quatremix div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    margin-bottom: 50px;
+}
+
+div#quatremix div img {
+    width: 80%;
+    border: 1px #ffe373 solid;
+    border-radius: 3px;
+}
+
+
+div#quatremix div p {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    font-size: 1.5vw;
+}
+
+div#quatremix div a {
+    border: solid 1px white;
+    display: block;
+    width: 60%;
+    color: white;
+    font-size: 1.4vw;
+    padding: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 2px;
+  
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+div#quatremix div a:hover {
+    color: rgb(0, 0, 0);
+    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+}
+
+.mix1, .mix2, .mix3 {
+  padding: 20px;
+}
+
+div.mix1 h3, div.mix2 h3, div.mix3 h3 {
+  font-family: 'Tangerine', cursive;
+   margin-bottom: 20px;
+   color: white;
+   font-size: 7vw;
+}
+
+
+
+
+
+
+/*********FIN DIV QUATRE MIX*************/
+
+
+ /*******DIV PHOTO PUB**************/
+#photopub {
+  width: 100%;
+  height: 60%;
+  background-image: url(/Photographie/lamaison/5.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+#photopub a#lienphotopub {
+  position: absolute; 
+  bottom: 30px;       
+ left: 30px;      
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px rgb(255, 255, 255) solid;
+  text-align: center;
+  border-radius: 3px;
+}
+  
+#photopub a#lienphotopub:hover {
+  color: rgb(0, 0, 0);
+  border: solid 1px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+
+}
+/*******FIN DIV PHOTO PUB**************/
+
+
+
+/********* FIN PAGE LA MAISON ************/
+
+  /*********FOOOTER*************/
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+#footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer div ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#footer div ul li {
+  padding: 10px;
+}
+
+#footer div ul li a {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight:lighter;
+  color: rgb(177, 177, 177);
+  font-size: 1.2vw;
+}
+#footer div ul li a:hover {
+  border-bottom: 1px  rgb(177, 177, 177) solid;
+}
+
+#hrN {
+  display: flex;
+  width: 80%;
+  align-self: center;
+}
+
+#footer div h3{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight:900;
+  color: white;
+  font-size: 1.8vw;
+}
+#footer div h3 {
+  text-align: center;
+}
+
+
+    /*********FIN FOOOTER*************/
+
+
+
+/*************************DEBUT CSS DIV SORTIE NOUVEAUTE PAGE NOUVEAUTE*****************************************/
+
+
+
+.item-card1 {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px; 
+}
+
+.item-card1 h3 {
+    font-family: 'Tangerine', monospace;
+    font-size: 4vw;
+}
+
+.item-card1 p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.3vw;
+} 
+
+.item-card1 span {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+.item-card1 a {
+    font-family: 'JetBrains Mono', monospace;
+    border: solid 1px white;
+    margin-top: 10px;
+    font-size: 1.3vw;
+
+}
+
+.item-card1 a:hover {
+    background-color: white;
+    color: black;
+}
+
+.item-card1 img {
+    width: 100%;
+    transition: opacity 0.3s;
+    vertical-align: middle; /* Pour supprimer tout espace blanc sous l'image */
+    border: 1px #ffe373 solid;
+    border-radius: 3px;
+}
+
+.item-card1:hover img {
+    opacity: 0.3;
+}
+
+.item-text1 {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+    width: 80%; 
+
+}
+
+.item-card1:hover .item-text1 {
+    opacity: 1;
+}
+
+.item-link, h3, p {
+    color: #fff;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.item-link {
+    text-decoration: none;
+    display: block;
+}
+
+.collection-title {
+    width: 100%; 
+    text-align: center;
+    margin-bottom: 20px; 
+}
+.collection-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#sortienouveaute > h1:nth-child(1) {
+    margin-top: 50px;
+    font-family: "Tangerine";
+    color: white;
+    font-size: 8vw;
+}
+
+#sortienouveaute > h1:nth-child(3) {
+    font-family: "Tangerine";
+    color: white;
+    font-size: 8vw;
+}
+
+#sortienouveaute > h1:nth-child(5) {
+    font-family: "Tangerine";
+    color: white;
+    font-size: 8vw;
+}
+
+/*********NEWSLETTER DIV*************/
+
+
+
+#formnews {
+  margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+ }
+ 
+ #formnews h3 {
+   font-family: 'JetBrains Mono', monospace;
+   color: white;
+   text-align: center;
+   padding: 30px;
+ }
+ 
+ #newsletter {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 30px;
+ }
+ 
+ button#bn {
+   background-color: #555;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+ }
+
+ button#bn:hover {
+  background-color: #333;
+}
+ 
+ div#emailError, div#thankYouMessage{
+   text-align: center;
+   padding-bottom: 10px;
+ }
+ 
+ #emailInput {
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+   margin-right: 30px;
+   width: 300px;
+ }
+ 
+ 
+ 
+ 
+     /*********FIN NEWSLETTER DIV*************/
+
+
+    
+    
+ /*************************FIN CSS DIV SORTIENOUVEAUTE PAGE NOUVEAUTE*******************************************/
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ /*********NEWSLETTER DIV*************/
+
+
+
+#formnews {
+    margin-top: 50px;
+     display: flex;
+     flex-direction: column;
+   }
+   
+   #formnews h3 {
+     font-family: 'JetBrains Mono', monospace;
+     color: white;
+     text-align: center;
+     padding: 30px;
+   }
+   
+   #newsletter {
+     display: flex;
+     justify-content: center;
+     padding-bottom: 30px;
+   }
+   
+
+
+
+   
+   #emailError, #thankYouMessage{
+     text-align: center;
+     padding-bottom: 10px;
+   }
+   
+   
+   
+   
+       /*********FIN NEWSLETTER DIV*************/
+
+
+
+/********NOUVEAUTE H1***************/
+
+h1#nouveauteh1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    text-align: center;
+}
+
+
+
+/********FIN NOUVEAUTE H1***************/
+
+
+
+
+
+/***************PAGE CONTACT*****************/
+
+h1 {
+margin-top: 50px;
+margin-bottom: 50px;
+font-family: 'JetBrains Mono', monospace;
+color: white;
+text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 20px;
+  width: 100%;
+}
+
+.contact-form-container {
+ width: 50%;
+  padding-right: 20px;
+}
+
+#dataAgreement {
+  width: 20px;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  border: 1px #ffe373 solid;
+  
+}
+
+.input-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"], 
+select, 
+textarea {
+
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  width:80% ;
+
+}
+
+input[type="email"] {
+  width:80% ;
+}
+
+input[type="tel"] {
+  width:80% ;
+}
+
+#title{
+  width: 80px ;
+}
+#subject {
+  width: 180px ;
+}
+
+textarea {
+  width:80% ;
+}
+
+button#c {
+  background-color: #555;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 25px;
+}
+
+button#c:hover {
+  background-color: #333;
+}
+
+span.error-message {
+  font-family: 'JetBrains Mono', monospace;
+  color: rgb(162, 86, 86);
+}
+
+
+#emailError {
+  text-align: left;
+  font-family: 'JetBrains Mono', monospace;
+  color: rgb(162, 86, 86);
+}
+
+
+#carteadresse {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  padding: 50px;
+}
+
+#carte {
+  width: 100%;  
+  border: 4px #ffe373 solid;
+  
+}
+
+#carte iframe {
+
+  width: 100%;
+}
+
+#coordonne {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+
+#coordonne h3, #coordonne a, #coordonne h5 {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#coordonne h3 {
+  margin-top: 25px;
+  text-decoration: underline;
+}
+
+#coordonne h5 {
+  color: rgb(158, 146, 146);
+  font-size: 2vw;
+}
+
+#coordonne a:hover{
+text-decoration: underline solid 2px white;
+}
+
+
+#thankYouMessage {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 2vw;
+  padding: 20px;
+}
+
+#photomerci {
+  width: 90%;
+  height: auto;
+  margin: 20px;
+  border: 1px #ffe373 solid;
+}
+
+
+
+
+
+/***************FIN PAGE CONTACT*****************/
+
+    /*********DIVLOGORESEAU***********/
+
+
+    div#noussuivre{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div#noussuivre h3 {
+        font-family: 'JetBrains Mono', monospace;
+        color: white;
+        font-size: 2.4vw;
+        margin: 0;
+        padding: 20px;
+    }
+
+    div#noussuivre i {
+      padding-left: 10px;
+    }
+
+
+     /*********FIN DIVLOGORESEAU***********/
+
+
+
+
+
+
+
+
+/*RESPONSIVE__________________*****************************************************************________________________________*/
+
+
+/*SMARTPHONE************************************/
+
+
+@media only screen and (max-width: 650px){
+
+
+  header div.logo img {
+    width: 50%;
+    height: auto;
+    padding: 10px;
+}
+
+div.logo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, 0);
+   align-items: center;
+   justify-content: center;
+   
+    
+}
+
+div.logo div {
+    width: 50%;
+}
+
+div.logo h1 {
+    margin: 0;
+    font-family: 'Tangerine', cursive;
+    color: white;
+   font-size: 12vw;
+}
+
+  #laperle h1 {
+font-size: 9vw;
+  }
+
+  #laperle p {
+    font-size: 2.6vw;
+  }
+
+  div#barreduhaut, nav.website {
+    display: none;
+  }
+
+  div#phototext {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   }
+
+   div#phototexttext a {
+    font-size: 2vw;
+    width: 50%;
+  }
+  div#phototexttext h2 {
+    font-size: 10vw
+  }
+
+  div#phototexttext h3 {
+    font-size: 4vw }
+
+  div#quote p  {
+    display: flex;
+    font-size: 3vw;
+    width: 100%;
+    align-items: center;
+  }
+
+  div#laperle p {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #footer {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    width: 100%;;
+  
+   
+  }
+  #footer div {
+    width: 100%;
+  }
+
+  hr#hr4 {
+    width: 100%;
+  }
+
+  #footer div ul li a  {
+    font-size: 4vw
+  }
+  
+  #footer div ul {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+  
+  #footer div h3 {
+    font-size: 4vw
+  } 
+
+  #hrN{
+    margin-bottom: 10px;
+  }
+  div#photopub{
+    height: 60%;
+    width: 100%;
+    overflow: hidden ;
+
+  }
+
+
+  div#photopub a {
+    font-size: 2vw ;
+    width:60%;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+  }
+
+  #ninephotoparent {
+    display: grid;
+    grid-column: 1fr;
+  }
+
+  #ninephotoparent div {
+    width: 100%;
+    padding: 20px
+  }
+
+  #noussuivre{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #noussuivre div h3{
+    font-size: 4vw;
+  }
+
+  #noussuivre div#logoreseau {
+    padding-bottom: 20px;
+  }
+
+  .collection-row {
+    display: grid;
+    grid-template-columns: 1fr ;
+}
+.item-card1 {
+    width: 100%; /* 2 articles par ligne */
+}
+
+.item-card1 h3 {
+    font-family: 'Tangerine', monospace;
+    font-size: 9vw;
+}
+
+.item-card1 p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.4vw;
+} 
+
+.item-card1 span {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+.item-card1 a {
+    font-family: 'JetBrains Mono', monospace;
+    border: solid 1px white;
+    margin-top: 10px;
+    font-size: 2vw;
+
+}
+
+#sortienouveaute > h1:nth-child(1) {
+    margin-top: 50px;
+    font-family: "Tangerine";
+    color: white;
+    font-size: 15vw;
+}
+
+#sortienouveaute > h1:nth-child(3) {
+    font-family: "Tangerine";
+    color: white;
+    font-size: 15vw;
+}
+
+#sortienouveaute > h1:nth-child(5) {
+    font-family: "Tangerine";
+    color: white;
+    font-size: 15vw;
+}
+   
+
+
+input[type="text"] {
+  width:280px ;
+
+}
+
+input[type="email"] {
+  width:280px ;
+}
+
+input[type="tel"] {
+  width:280px ;
+}
+
+select{
+  width:auto ;
+}
+
+textarea {
+  width:280px ;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+/*********DIV QUATRE MIX*************/
+div#quatremix {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
+  margin-top: 0px;
+  gap: 0px;
+}
+
+div#quatremix div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+  margin-bottom: 0px;
+}
+
+div#quatremix div img {
+  width: 80%;
+  border: 1px #ffe373 solid;
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+
+div#quatremix div p {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+}
+
+div#quatremix div a {
+  border: solid 1px white;
+  display: block;
+  width: 60%;
+  color: white;
+  font-size: 1.4vw;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  border-radius: 2px;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+div#quatremix div a:hover {
+  color: rgb(0, 0, 0);
+  border: solid 1px rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.mix1, .mix2, .mix3 {
+padding: 20px;
+}
+
+div.mix1 h3, div.mix2 h3, div.mix3 h3 {
+font-family: 'Tangerine', cursive;
+ margin-bottom: 20px;
+ color: white;
+ font-size: 7vw;
+}
+
+.imgmix1 { order: 1; }
+    .imgmix2 { order: 3; }
+    .imgmix3 { order: 5; }
+    .mix1 { order: 2; }
+    .mix2 { order: 4; }
+    .mix3 { order: 6; }
+
+
+
+
+
+
+/*********FIN DIV QUATRE MIX*************/
+
+
+/* PAGE CONTACT*/
+div.image-container {
+  width: 100%;
+}
+
+#carteadresse {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+#carte {
+  width: 100%;
+height: 300px;
+}
+
+.contact-container {
+  display: block;
+}
+
+div#coordonne h5 {
+  font-size: 3.5vw;
+}
+
+/*********DIV NOTRE HISTOIRE PAGE LA MAISON*************/
+
+#notrehistoire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  text-align: center; 
+}
+
+#notrehistoire h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: bolder;
+  font-size: 4vw;
+  margin-top: 40px;
+  color: rgb(255, 255, 255);
+}
+
+#notrehistoire h1 {
+  font-family: 'Tangerine', cursive;
+  font-size: 13vw;
+ margin-bottom: 20px;
+ color: white;
+}
+
+
+/*********FIN DIV NOTRE HISTOIRE*************/
+
+/****QUATRE MIX ************/
+
+div#quatremix div a {
+  margin-top: 20px;
+  font-size: 3vw;
+}
+
+div.mix1 h3, div.mix2 h3, div.mix3 h3 {
+  font-size: 11vw;
+}
+
+
+
+}
+
+
+ 
+
+
+/*TABLETTE************************************/
+@media only screen and (min-width:650px) and (max-width: 855px) {
+
+  div#photopub a {
+    font-size: 1.4vw ;
+    width:40%;
+  }
+
+
+  div#phototexttext a {
+    font-size: 1.4vw;
+    width: 70%;
+  }
+  div#phototexttext h2 {
+    font-size: 6vw
+  }
+
+  div#phototexttext h3 {
+    font-size: 3vw
+  }
+
+  div#phototexttext p {
+    font-size: 1.4vw
+  }
+
+  hr#hr4 {
+    width: 100%;
+  }
+
+   
+div#barreduhaut, nav.website {
+    display: none;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr ;
+  margin-top: 50px;
+}
+
+#footer div ul li a  {
+  font-size: 1.8vw
+}
+
+#footer div ul {
+  width: 60%;
+}
+
+#footer div h3 {
+  font-size: 2.5vw
+} 
+/*******HAMBURGER BOUTON******/
+
+div.navbar1 {
+    display:block;
+}
+
+/*fais disparaitre les lignes hr */
+
+hr#hr1, hr#hr2 {
+    display: none;
+}
+
+/*faire disparaitre le bouton du carousel*/
+
+
+
+div.boutoncarousel a {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid 1px white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1,1vw;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+
+.collection-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.item-card1 {
+    width: 100%; /* 2 articles par ligne */
+}
+.item-card1 span {
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+}
+
+.item-card1 h3 {
+    font-size: 5vw;
+}
+
+#sortienouveaute > h1:nth-child(1) {
+    margin-top: 50px;
+    font-family: "Tangerine";
+    color: white;
+    font-size: 13vw;
+}
+
+#sortienouveaute > h1:nth-child(3) {
+    font-family: "Tangerine";
+    color: white;
+    font-size: 13vw;
+}
+
+#sortienouveaute > h1:nth-child(5) {
+    font-family: "Tangerine";
+    color: white;
+    font-size: 13vw;
+}
+
+   
+}
+
+
+
+
+
+/*GRAND ECRAN*******************************************************/
+@media only screen and (min-width: 856px) {
+   
+   
+    /*******HAMBURGER BOUTON******/
+    div.navbar1 {
+        display: none;
+    }
+}
+
+
+

@@ -1,0 +1,2122 @@
+/*ROUTINE*/
+
+* {
+    box-sizing: border-box;
+   
+}
+
+
+
+body{
+    background-color: black;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+a {
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+
+}
+
+hr {
+    margin: 0;
+    border: 0;
+    height: 2px;
+    background: #FFE373;
+    background-image: linear-gradient(to right, rgb(238, 255, 0), rgb(148, 159, 3), rgb(220, 248, 5));
+
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+/*STYLE NAVIGATION****************************/
+
+/*BARRE DU HAUT********************************/
+
+div#barreduhaut {
+    height: 40px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+div#barreduhaut img[alt^=logo] {
+width: 10px;
+height: 10px;
+}
+
+div#droite {
+display: flex;
+margin: 10px;
+}
+
+div#droite div {
+    margin: 2px;
+    
+}
+div#droite div a {
+    color: white;
+    text-decoration: none;
+}
+
+div#droite div#loupe {
+    padding-right: 40px;
+    
+}
+
+div#droite div#loupe input {
+    background-color: #00000063;
+    color: white
+    ;
+}
+
+div#droite div#moncompte a i,div#droite div#administrateur a i {
+    padding-right: 5px;
+    
+}
+div#droite div#moncompte a, div#droite div#administrateur a {
+    padding-right: 10px;
+}
+
+div#gauche {
+display: flex;
+margin: 10px;
+}
+
+div#gauche div {
+    margin: 2px;
+}
+
+div#gauche div a {
+    color: white;
+    text-decoration: none;
+}
+
+div#gauche div#telephone {
+    padding-right: 5px;
+    
+}
+
+div#gauche div#telephone a i {
+    padding-right: 5px;
+}
+
+div#gauche div#mail a i {
+    padding-right: 10px;
+}
+/* FIN BARRE DU HAUT******************************************/
+
+/*NAVIGATION****************************************/
+
+nav.website {
+  width: 100%;
+}
+
+
+header div.logo img {
+    width: 20%;
+    height: auto;
+    padding: 10px;
+}
+
+div.logo {
+    width: 100%;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0);
+   align-items: center;
+   justify-content: center;
+   
+    
+}
+
+div.logo div {
+    width: 50%;
+}
+
+div.logo h1 {
+    margin: 0;
+    font-family: 'Tangerine', cursive;
+    color: white;
+   font-size: 5vw;
+}
+
+header nav.website ul {
+    
+    text-decoration: none;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+   
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+
+nav.website ul li {
+  
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+}
+
+nav.website ul li a {
+    
+font-family: 'JetBrains Mono', monospace;
+width: 100%;
+color: white;
+font-size: 1.3vw;
+  
+    
+}
+
+
+/*menu déroulant*****************************************/
+
+
+
+
+div#joaillerie, div#pierreprecieuse, div#horlogerie {
+    
+    display: flex ;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    align-items: center;
+    /*height: 30vw;*/
+    height: auto;
+    
+}
+
+
+    
+div#pierreprecieuse div.texte ul{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items:flex-end;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+div#joaillerie div.texte ul{
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items:flex-end;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+
+div#horlogerie div.texte ul {
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items:flex-end;
+    background-color: rgba(0, 0, 0, 0);
+
+    
+}
+
+
+
+/*NOUVEAUTE MENU DEROULANT*/
+
+div#nouveaute {
+  display: grid;
+  justify-content: space-between; 
+  grid-template-columns: 1fr 1fr 1fr;
+ 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 4;
+  align-items: center;
+ justify-content: center;
+}
+
+#n1 img {
+margin-left: 5%;
+margin-right: 5%;
+}
+#n2 img {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#n3 img {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+
+#nouveaute div {
+  position: relative   ; 
+}
+
+#nouveaute p {
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 2; 
+
+  background-color: rgba(0, 0, 0, 0.41);
+  width: 89%;
+  text-align: center;
+  padding: 10px;
+  font-family:'JetBrains Mono', monospace; ;
+  color: white;
+}
+
+#nouveaute div img {
+  border: 1px #ffe373 solid;
+  border-radius: 3px;
+  width: 90%;
+}
+
+
+/*FIN NOUVEAUTE MENU DEROULANT*/
+    
+
+div#joaillerie div.texte ul li, div#pierreprecieuse div.texte ul li,div#horlogerie div.texte ul li  {
+    
+    padding: 10px;
+    grid-column-start: 2 ;
+    
+}
+
+div#joaillerie div.texte ul li a, div#horlogerie div.texte ul li a, div#pierreprecieuse div.texte ul li a{
+    font-family: 'JetBrains Mono', monospace;
+    width: 100%;
+   
+
+}
+    
+
+div#pierreprecieuse div, div#joaillerie div, div#horlogerie div {
+    width: 50%;
+}
+
+div#pierreprecieuse div.img, div#joaillerie div.img, div#horlogerie div.img{
+    text-align: center;
+}
+
+div#pierreprecieuse div img, div#joaillerie div img, div#horlogerie div img {
+    width: 80%;
+    margin: 20px;
+    border: 1px #ffe373 solid;
+    border-radius: 3px;
+}
+
+/* FIN MENU DEROULANT */
+
+
+
+
+ /* Hamburger Menu *******************************************************/
+
+
+ .container1 {
+    
+    width: 100%;
+    margin: auto;
+  }
+  
+  .navbar1 {
+    width: 100%;
+
+  }
+  
+  .nav-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+  }
+  
+  .navbar1 .menu-items1 {
+    display: flex;
+  }
+  
+  .navbar1 .nav-container1 li {
+    list-style: none;
+  }
+  
+  .navbar1 .nav-container1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+  
+  
+  .nav-container1 {
+    display: block;
+    position: relative;
+    height: 60px;
+  }
+  
+  .nav-container1 .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .nav-container1 .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .nav-container1 .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  .nav-container1 .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .nav-container1 .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .nav-container1 .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .navbar1 .menu-items1 {
+    padding-top: 60px;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+   
+  
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+  }
+  
+  .navbar1 .menu-items1 li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .menu-items1 {
+    display: flex;
+    flex-direction: column;
+    /*PERMETTTRE LE SCROLL DU MENU HAMBURGER*/
+      overflow-y: auto;
+     
+
+  }
+
+
+  
+  
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .menu-items1 {
+    transform: translateX(0);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(45deg);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-45deg);
+  }
+  
+  .nav-container1 input[type="checkbox"]:checked ~ .logo{
+    display: none;
+  }
+
+  div.menu-items1 {
+    width:100%;
+    background-color: black
+ 
+  }
+
+  div[class="container nav-container1"] {
+  margin-left: 0;
+  margin-right: 0;
+  }
+
+  div#barreduhauthamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  /***********INPUTRECHERCHE****************/
+  input.inputrechercheh {
+    background-color: rgba(0, 0, 0, 0.317);
+    color: white;
+    border: 1px solid white;
+    width: 200px;
+  }
+
+
+
+
+  
+
+/***********MENU SURVOL********************/
+
+
+nav.website ul li.underline, nav.website div.texte ul li.underline{
+    position: relative;
+}
+
+nav.website ul li.underline::after, nav.website div.texte ul li.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffe373;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav.website ul li.underline:hover::after , nav.website div.texte ul li.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+ul.sousmenu1, .sousmenu2, .sousmenu3 {
+    margin: 0;
+    padding: 0;
+}
+
+/*********DIV #joaillerie + horlogerie + pierrecieuse survol pour souligner les element de la nav*/
+.underlineU {
+  border-bottom: 2px #ffe373 solid;
+}
+
+
+
+/***********IMAGE MENU SURVOL SECTION NOUVEAUTE********************/
+
+
+
+.hover {
+    transition: opacity 0.5s ease;
+}
+.hover:hover {
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+
+/*FIN NAVIGATION****************************************/
+
+
+
+
+/*FIN STYLE NAVIGATION****************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FIN STYLE NAVIGATION****************************/
+
+/************************CAROUSEL**********************/
+
+.carousel {
+    position: absolute;
+    top:0;
+    z-index: 1;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+
+/*******BOUTON CAROUSEL******/
+
+
+div.boutoncarousel {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;}
+
+div.boutoncarousel a {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid 1px white;
+  display: block;
+  width: 80%;
+  height: 100%;
+  color: white;
+  font-size: 1.5vw;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  border-radius: 2px;
+}
+
+
+
+
+
+div.boutoncarousel a:hover {
+color: rgb(0, 0, 0);
+border: solid 1px rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+
+
+/*********LAPERLE DU LAC + TEXTE ******/
+.tangerine{
+  padding-top: 20px;
+  margin: 0;
+  font-family: 'Tangerine', cursive;
+  color: white;
+ font-size: 5vw;
+ text-align: center;
+}
+
+.jet {
+  font-family: 'JetBrains Mono', monospace; 
+  color: white;
+  font-size: 2vw;
+  text-align: center;
+}
+
+#hr4 {
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#textlaperle {
+  font-size: 1.3vw;
+  padding: 30px;
+}
+
+
+
+/****DEBUT DIV PHOTO ET TEXTE A DROITE***/
+
+div#phototext {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 28vw;
+ }
+
+ div#phototextphoto {
+  padding: 30px;
+
+ }
+
+ div#phototextphoto img {
+  border: 1px #ffe373 solid;
+ }
+
+ div#phototexttext {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding-right: 10px;
+ }
+
+
+ div#phototexttext h2 {
+  font-family: 'Tangerine', cursive;
+  color: white;
+ font-size: 5vw;
+ }
+
+ div#phototexttext h3 {
+  font-family: 'JetBrains Mono', monospace; 
+  color: white;
+  font-size: 2vw;
+ }
+
+ div#phototexttext p {
+  font-family: 'JetBrains Mono', monospace; 
+  color: white;
+  font-size: 1.2vw;
+ }
+
+ div#phototexttext a {
+  border: solid 1px white;
+  display: block;
+  width: 30%;
+  color: white;
+  font-size: 1.4vw;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  border-radius: 2px;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  
+ }
+
+ div#phototexttext a:hover {
+  color: rgb(0, 0, 0);
+border: solid 1px rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+ }
+
+
+
+/*******DIV PHOTO PUB**************/
+#photopub {
+  width: 100%;
+  height: 60%;
+  background-image: url(/Photographie/photodivpub/photofondblanc.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative; 
+}
+
+#photopub a {
+  position: absolute; 
+  bottom: 30px;       
+  right: 30px;      
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 1px rgb(255, 255, 255) solid;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 1.2vw;
+}
+  
+#photopub a:hover {
+  color: rgb(0, 0, 0);
+  border: solid 1px rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+/*******FIN DIV PHOTO PUB**************/
+
+
+  
+  
+/* H1 TITRE COLLECTION DARK MONTRE*/
+
+
+#h1dark {
+  margin-top: 50px;
+  font-family: 'Tangerine', cursive;
+  color: white;
+ font-size: 6vw;
+ text-align: center;
+}
+
+   /*******DIV PHOTO 9pics**************/
+
+   #nine {
+    
+  background-image: url(/logo/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 50px;
+  width: 100%;
+   }
+#ninephotoparent {
+  display: flex;
+  width: 100%;
+}
+
+    #ninegauche{
+      width: 50%;
+      margin: 5px;
+    }
+
+    #ninegauche img {
+      border: 1px #ffe373 solid;
+    }
+
+   #ninedroite {
+    margin: 5px;
+    width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+
+
+#ninedroite img{
+  border: 1px #ffe373 solid;
+}
+
+
+
+
+
+  /*******FIN DIV PHOTO 9pics**************/
+
+
+  /*********NEWSLETTER DIV*************/
+
+
+
+#formnews {
+ margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+#formnews h3 {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+#newsletter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+button#buttonnewsletter {
+  background-color: #555;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button#buttonnewsletter:hover {
+  background-color: #333;
+}
+
+#emailError, #thankYouMessage{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#emailInput {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-right: 30px;
+  width: 300px;
+}
+
+
+
+
+    /*********FIN NEWSLETTER DIV*************/
+
+
+
+  /*********FOOOTER*************/
+#footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 50px;
+}
+
+#footer div {
+  display: flex;
+  flex-direction: column;
+}
+
+#footer div ul {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#footer div ul li {
+  padding: 10px;
+}
+
+#footer div ul li a {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight:lighter;
+  color: rgb(177, 177, 177);
+  font-size: 1.2vw;
+}
+#footer div ul li a:hover {
+  border-bottom: 1px  rgb(177, 177, 177) solid;
+}
+
+#hrN {
+  display: flex;
+  width: 80%;
+  align-self: center;
+}
+
+#footer div h3{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight:900;
+  color: white;
+  font-size: 1.8vw;
+}
+#footer div h3 {
+  text-align: center;
+}
+
+
+    /*********FIN FOOOTER*************/
+
+
+    /*********DIVLOGORESEAU***********/
+
+
+    div#noussuivre{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    div#noussuivre h3 {
+        font-family: 'JetBrains Mono', monospace;
+        color: white;
+        font-size: 2.4vw;
+        margin: 0;
+        padding: 20px;
+    }
+
+    div#noussuivre i {
+      padding-left: 10px;
+    }
+
+
+     /*********FIN DIVLOGORESEAU***********/
+
+
+     /**********COOKIE***************/
+     #cookie-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .cookie-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.cookie-content {
+    background-color: #f4f4f472;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cookie-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cookie-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.refuse-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+  
+
+
+
+
+
+
+
+
+
+/*RESPONSIVE__________________*****************************************************************________________________________*/
+
+
+/*SMARTPHONE************************************/
+@media only screen and (max-width: 650px){
+
+  #laperle h1 {
+font-size: 9vw;
+  }
+
+  #laperle p {
+    font-size: 4vw;
+  }
+
+  div#barreduhaut, nav.website {
+    display: none;
+  }
+
+  div#phototext {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+   }
+
+   div#phototexttext a {
+    font-size: 2vw;
+    width: 50%;
+  }
+  div#phototexttext h2 {
+    font-size: 10vw
+  }
+
+  div#phototexttext h3 {
+    font-size: 4vw }
+
+  div#quote p  {
+    display: flex;
+    font-size: 3vw;
+    width: 100%;
+    align-items: center;
+  }
+
+  div#laperle p {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  #footer {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 50px;
+    width: 100%;;
+  
+   
+  }
+  #footer div {
+    width: 100%;
+  }
+
+  hr#hr4 {
+    width: 100%;
+  }
+
+  #footer div ul li a  {
+    font-size: 4vw
+  }
+  
+  #footer div ul {
+    width: 60%;
+    margin-bottom: 40px;
+  }
+  
+  #footer div h3 {
+    font-size: 4vw
+  } 
+
+  #hrN{
+    margin-bottom: 10px;
+  }
+
+
+
+  div#photopub a {
+    font-size: 2vw ;
+    width:60%;
+    right: 10px;
+    bottom: 10px;
+    padding: 5px;
+  }
+
+  #ninephotoparent {
+    display: grid;
+    grid-column: 1fr;
+  }
+
+  #ninephotoparent div {
+    width: 100%;
+    padding: 20px
+  }
+
+  #noussuivre{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #noussuivre div h3{
+    font-size: 4vw;
+  }
+
+  #noussuivre div#logoreseau {
+    padding-bottom: 20px;
+  }
+
+  #emailInput {
+    width: 200px;
+  }
+
+  .carousel {
+    position: relative;
+  }
+
+
+ 
+}
+
+/*TABLETTE************************************/
+@media only screen and (min-width:650px) and (max-width: 855px) {
+
+  div#photopub a {
+    font-size: 1.4vw ;
+    width:40%;
+  }
+
+
+  div#phototexttext a {
+    font-size: 1.4vw;
+    width: 70%;
+  }
+  div#phototexttext h2 {
+    font-size: 6vw
+  }
+
+  div#phototexttext h3 {
+    font-size: 3vw
+  }
+
+  div#phototexttext p {
+    font-size: 1.4vw
+  }
+
+  hr#hr4 {
+    width: 100%;
+  }
+
+   
+div#barreduhaut, nav.website {
+    display: none;
+}
+
+#footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr ;
+  margin-top: 50px;
+}
+
+#footer div ul li a  {
+  font-size: 1.8vw
+}
+
+#footer div ul {
+  width: 60%;
+}
+
+#footer div h3 {
+  font-size: 2.5vw
+} 
+/*******HAMBURGER BOUTON******/
+
+div.navbar1 {
+    display:block;
+}
+
+/*fais disparaitre les lignes hr */
+
+hr#hr1, hr#hr2 {
+    display: none;
+}
+
+/*faire disparaitre le bouton du carousel*/
+
+
+
+div.boutoncarousel a {
+  margin-left: 10%;
+  margin-right: 10%;
+  border: solid 1px white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 1,1vw;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+}
+   
+}
+
+
+/******RESOLUTION BUG TAILLE HAUTEUR MENU********/
+
+@media screen and (min-width: 851px) {
+
+	#joaillerie, #horlogerie, #pierreprecieuse {
+		height: auto;
+	}
+
+}
+
+
+
+
+
+/*GRAND ECRAN*******************************************************/
+@media only screen and (min-width: 856px) {
+   
+   
+    /*******HAMBURGER BOUTON******/
+    div.navbar1 {
+        display: none;
+    }
+}
+
+
+
+
+/**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************ADMIN PORTAL PAGE******/
+
+/*LOGIN ADMIN****************************/
+
+body {
+  position: relative;
+}
+
+img.logo-admin {
+  width: 80%;
+}
+
+div.logo-croix {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+div.logo-croix img {
+  align-self: center;
+}
+
+div.logo-croix i {
+  align-self: flex-end;
+}
+
+div.admin-login-form h4 {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 19px;
+}
+
+hr.hr-admin-1 {
+  color: #FFE373 ;
+  background-image: none;
+  margin-top: 20px;
+margin-bottom: 5px;
+
+}
+
+hr.hr-admin-2 {
+  color: #FFE373 ;
+  background-image: none;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+
+
+.admin-login-form {
+  max-width: 300px;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999999999;
+  background-color: black;
+  height: 100%;
+  position: fixed;
+  flex-direction: column;
+  border-right: solid 2px #FFE373;
+  left: -300px;
+
+    /* Ajout de la transition */
+    transition: left 0.5s ease; /* 0.5s est la durée de l'animation */
+}
+
+i.fa-regular.fa-circle-xmark{
+  color: #FFE373;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+left: 10px;
+top: 10px;
+}
+
+.admin-login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.admin-login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.admin-login-form input[type="text"],
+.admin-login-form input[type="password"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.admin-login-form button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+border: solid 1px #FFE373;
+  color:  #FFE373;
+  cursor: pointer;
+}
+
+.admin-login-form button:hover {
+  background-color:  #FFE373;
+  color: black;
+}
+
+button.button-account, button.button-admin {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.login-hide{
+  display: none;
+
+}
+
+.login-show{
+  display: block;
+  left: 0;
+}
+
+body > div.admin-login-form.login-show > a {
+  font-size: 12px;
+}
+
+
+body > div.admin-login-form > p {
+      border-radius: 10px;
+    padding: 10px;
+    border: 1px solid yellow;
+    text-align: center;
+    font-size: 11px;
+}
+
+
+
+/*FIN LOGIN ADMIN****************************/
+
+
+
+
+
+
+/*DEBUT EXTRANET ADMIN******************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+header.header-extra {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #FFE373;
+  padding: 20px;
+  background-image: url(../Photographie/header/header-top.png);
+  background-position: center;
+  background-size: cover;
+}
+
+header div.logo_extranet {
+  width: 30%;
+}
+
+header div.logo_extranet a img {
+    width: 75%;
+    align-self: center;
+}
+
+header div.h1_extranet {
+  display: flex;
+    width: 70%;
+}
+
+header div.h1_extranet h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header div.h1_extranet h1 a {
+width: 70%;
+align-self: center;
+}
+
+
+.extranet-h1 {
+  font-family: 'Tangerine', cursive;
+  color: white;
+  font-size: 8vw;
+}
+
+div.navigation-extra {
+  width: 27%;
+  height: 100%;
+  border-right: solid 2px #FFE373;
+}
+
+div.navigation-extra h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 25px;
+  color: white;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #FFE373;
+}
+
+span.user-extra {
+  font-weight: 800;
+  color: gray;
+  text-transform: uppercase;
+}
+ul.administrateur-extra, ul.createur-extra, ul.article-extra, ul.categorie-extra {
+  padding: 0;
+  margin: 0;
+}
+
+ul.categorie-extra {
+  border-bottom: 2px solid #FFE373;
+}
+
+ul.createur-extra,  ul.article-extra,ul.categorie-extra {
+  border-top: 2px solid #FFE373;
+}
+ul.administrateur-extra > h4 a, ul.createur-extra > h4 a, ul.article-extra > h4 a, ul.categorie-extra > h4 a {
+  width: 100%;
+  font-family: 'JetBrains Mono', monospace;
+  border-bottom: 2px solid #FFE373;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+ul.administrateur-extra  a, ul.createur-extra  a, ul.article-extra  a, ul.categorie-extra  a {
+  color: white;
+  display: block;
+}
+
+ul.administrateur-extra li a, ul.createur-extra li a, ul.article-extra li a, ul.categorie-extra li a {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  text-align: center;
+  
+
+}
+
+ul.administrateur-extra li:hover, ul.createur-extra li:hover , ul.article-extra li:hover, ul.categorie-extra li:hover {
+  background-color: #FFE373;
+   transition: background-color ease 0.4s;
+}
+
+ul.administrateur-extra li:hover a, ul.createur-extra li:hover a , ul.article-extra li:hover a, ul.categorie-extra li:hover a {
+  color: black;
+}
+
+div.navigation-extra div p {
+  text-align: center;
+  margin: 0;
+  padding-top: 20px;
+}
+
+form.logout{
+  text-align: center;
+  border-bottom: 2px solid #FFE373 ;
+  padding-bottom: 20px;
+}
+
+button.deconnexion-extra {
+  background-color: transparent;
+  color:#FFE373 ;
+  border: 1px solid #FFE373;
+  transition: background-color ease 0.3s;
+}
+
+button.deconnexion-extra:hover {
+  background-color:#FFE373;
+  color: black;
+}
+
+.content_extranet {
+  display: flex;
+  border-right: 2px solid #FFE373;
+  border-left: 2px solid #FFE373;
+}
+
+.extranet_content {
+  height: -webkit-fit-content;
+  width: 75%;
+  position: relative;
+ 
+}
+
+.extranet_content h2 {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+body > div > div.extranet_content > h2 {
+  margin: 0;
+  padding: 10px;
+  color: white;
+  font-family: 'Tangerine', cursive;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: -webkit-fill-available;
+  text-align: center;
+}
+/*FIN EXTRANET ADMIN****************************/
+
+
+
+
+
+
+
+
+
+
+/*DEBUT ADMINISTRATEUR PAGE****************************/
+
+.administrateur-page {
+  display: flex;
+  border-right: 2px solid #FFE373;
+  border-left: 2px solid #FFE373;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.content-admin {
+  width: 75%;
+}
+
+.top-title {
+  text-align: center;
+  border-bottom: 1px solid #FFE373 ;
+  margin: 0;
+  padding: 20px;
+  color: black;
+  background-color:#FFE373 ;
+}
+
+.add_admin h2 {
+  margin-top: 50px;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  border: 1px solid white;
+  align-self: center;
+  width: 70%;
+  width: fit-content;
+}
+
+div.add_admin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#form_add_admin, #form_add_article {
+  width: 80%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#form_add_admin input {width: 100%;}
+
+
+#form_add_article input{
+  width: 100%;
+  align-self: center;
+  padding: 4px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  
+}
+
+input[type="file"] {
+  color: white;
+}
+
+#form_add_article textarea {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+fieldset {
+  width: 50%;
+}
+
+fieldset legend {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+div#categorie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#form_add_article > select:nth-child(11) {
+  margin-bottom: 20px;
+}
+
+#form_add_admin > label:nth-child(1), #form_add_article > label:nth-child(1) {
+  margin-top: 20px;
+}
+
+button[name="add_admin"],button[name="add_createur"],button[name="add_categorie"] {
+  background-color: transparent;
+  border: 1px solid #FFE373 ;
+  color:#FFE373 ;
+  width: fit-content;
+  align-self: center;
+  transition: background-color ease 0.3s;
+}
+
+button[name="add_admin"]:hover,button[name="add_createur"]:hover {
+  color:black;
+  background-color:#FFE373 ;
+}
+
+
+.admin_add_content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  padding-top: 150px;
+}
+
+#form_add_admin > label:nth-child(3) > button, #form_add_article > label:nth-child(3) > button {
+  background-color: transparent;
+}
+
+
+/*MODIFICATION ADMIN PARTIE CSS*/
+
+h2#update_admin,h2#update_createur,h2#add_createur,h2#delete_createur,h2#add_categorie,h2#update_categorie, h2#delete_categorie,h2#add_article ,h2#update_article,h2#delete_article {
+  margin-top: 100px;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  border: 1px solid white;
+  align-self: center;
+  width: 70%;
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.update_list_admin {
+  width: 100%;
+  align-self: center;
+  margin: auto;
+}
+
+
+
+/* Style général du tableau */
+table {
+  border-collapse: collapse; /* Collapse borders */
+  font-size: 0.9em; /* Font size */
+  min-width: 400px; /* Minimum width */
+  background-color: #000; /* Black background */
+  width: 80%;
+  border: 1px solid #FFE373;
+  margin: auto;
+  align-self: center;
+}
+
+/* Style des cellules d'en-tête */
+table thead th {
+  background-color: #333; /* Darker background for thead */
+  color: #FFD700; /* Gold text */
+  text-align: left;
+  padding: 12px 15px; /* Padding inside cells */
+}
+
+/* Style des cellules du corps du tableau */
+table tbody td {
+  color: #FFF; /* White text for tbody */
+  padding: 4px 15px; /* Padding inside cells */
+}
+
+table > tbody > tr > td:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Style des lignes du corps du tableau pour l'alternance des couleurs */
+table tbody tr:nth-of-type(even) {
+  background-color: #222; /* Even darker background for even rows */
+}
+
+table tbody tr:nth-of-type(odd) {
+  background-color: #000; /* Maintain black background for odd rows */
+}
+
+/* Style des cellules de la colonne 'Actions' */
+table tbody td:last-child {
+  text-align: center; 
+}
+
+/* Style du bouton Éditer */
+button {
+  padding: 4px 12px; 
+  margin-top: 5px; 
+  background-color: #FFD700; 
+  color: #000; 
+  border: none;
+  cursor: pointer; 
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+button.admin:hover, button.creat:hover {
+  background-color: #cca300; /* A darker gold color on hover */
+}
+
+
+div#editForm {
+  position: fixed;
+  top: 50%;
+  right: -100%;
+  background-color: #000;
+  border: 1px solid #FFE373;
+  transform: translate(-50%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div#editForm h2, div#deleteForm h2 {
+  color: white;
+  margin-top: 20px;
+  border: solid 2px #FFE373;
+  padding: 10px;
+}
+
+div#editForm form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+}
+
+div#editForm form button {
+ align-self: center;
+}
+
+div#editForm form input {
+  width: 100%;
+}
+
+
+/*SUPRESSION PARTIE CSS*/
+
+div#delete-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+h2#delete_admin  {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  border: 1px solid white;
+  align-self: center;
+  width: fit-content;
+}
+
+#deleteForm {
+  position: fixed;
+  top: 50%;
+  right: -100%;
+  background-color: #000;
+  border: 1px solid #FFE373;
+  transform: translate(-0%);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#delete-form > div.delete_form {
+  margin-bottom: 100px;
+}
+
+
+
+
+
+
+/*FIN ADMINISTRATEUR PAGE****************************/
+
+
+/*****FORMULAIRE AJOUTER ARTICLE********/
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  padding: 0 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* cases à cocher */
+.custom-checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*cases à cocher personnalisées */
+.custom-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* la case est cochée */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+
+.custom-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 13px;
+  user-select: none;
+}
+
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio-mark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.custom-radio:hover input ~ .radio-mark {
+  background-color: #ccc;
+}
+
+.custom-radio input:checked ~ .radio-mark {
+  background-color: #2196F3;
+}
+
+.radio-mark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.custom-radio input:checked ~ .radio-mark:after {
+  display: block;
+}
+
+.custom-radio .radio-mark:after {
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.update_list_article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+.article-content {
+  box-sizing: border-box;
+  display: flex;
+  width: 29%;
+  flex-direction: column;
+  border: solid 1px #FFE373;
+  margin: 20px;
+  height: auto;
+  justify-content: space-between;
+}
+
+.article-content p {
+  padding: 10px;
+  text-align: justify;
+}
+
+.article-content h2,.article-content h4,.article-content h5 {
+  color: white;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.article-content h5 {
+  margin-top: 15px;
+  color: #FFE373;
+  padding-left: 10px;
+}
+
+.article-content h2 {
+      font-size: 20px ;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 10px;
+      border: solid 1px #FFE373;
+      margin-bottom: 20px;
+      text-align: center; 
+}
+
+.article-content h4 {
+  text-align: center;
+}
+
+.article-content button {
+  margin-top: 40px;
+}
+
+#categorie > div > h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.2em;
+  font-weight: 800;
+  border: solid 1px #FFE373;
+  padding: 10px;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.category-group {
+margin-bottom: 20px;
+}
+
+.update_form_article {
+  width: 100%;
+  
+}
+#update_form_article {
+  background-color: black;
+  position: absolute;
+  right: -200%;
+  padding: 20px;
+  border: solid 1px #FFE373;
+}
+
+
+
+
+#form_add_article.update_article {
+  width: 100%;
+}
+#update_form_article > h2 {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  margin-top: 40px;
+  margin-left: 15px;
+
+}
+
+body > div > div.content-admin > div.error-message > h4 {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+}
+
+#editCategorie {
+  margin-bottom: 20px;
+}
+#filtreArticle {
+  display: flex;
+}
+#filtreArticle button {
+  margin-left: 10px;
+}
+#filtreArticle form{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+@media only screen and (max-width: 800px) {
+
+
+  div.navigation-extra {
+    width: 38%;
+  }
+
+    .update_list_article {
+      flex-direction: column;
+   
+    }
+
+    .article-content{
+      width: 80%;
+      align-self: center;
+
+    }
+
+
+
+}
+
+
+
+
